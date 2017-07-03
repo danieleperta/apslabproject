@@ -1,0 +1,33 @@
+@import 'mixins'
+
+$margin: 30px
+
+.headerCont
+  width: 100%
+  height: 70px
+  position: fixed
+  z-index: 100
+  transition: 800ms all ease-in-out
+  transform: translateY(-70px)
+  left: 0
+  @include spaceBetween
+
+
+.logoHeader
+  width: 130px
+  height: 40px
+  background-image: url(../img/apslogo.svg)
+  @include background
+  margin-left: $margin
+  cursor: pointer
+
+.puntoInterrogativo
+  width: 35px
+  height: 35px
+  @include background
+  background-image: url(../img/puntodomanda.svg)
+  margin-right: $margin
+  cursor: pointer
+
+.attivo
+  transform: translateY(0px)

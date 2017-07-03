@@ -1,0 +1,77 @@
+@import 'mixins'
+$colorSidebar: #0F8B8D
+
+.sidebarCont
+  width: 450px
+  height: 100%
+  top: 0
+  position: fixed
+  background: $colorSidebar
+  right: 0
+  z-index: 104
+  @include flexCenter
+  right: -450px
+  @media (max-width: 700px)
+    width: 100%
+    right: -100%
+  transition: transform 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940)
+
+.is-Active
+  transform: translateX(-450px)
+  @media (max-width: 700px)
+    transform: translateX(-100%)
+
+.bianco
+  width: 100%
+  height: 100%
+  background-color: rgba(255, 255, 255, 0.8)
+  position: fixed
+  z-index: 103
+  transition: 1s all ease-in-out
+  opacity: 0
+  pointer-events: none
+  top: 0
+  left: 0
+
+.showWhite
+  opacity: 1
+  pointer-events: all
+
+.x
+  font-size: 30px
+  color: white
+  position: absolute
+  right: 40px
+  top: 40px
+  font-weight: 400
+  cursor: pointer
+
+.desc
+  margin-left: 40px
+  margin-right: 40px
+  text-align: right
+  font-size: 15px
+  font-family: 'Muli', sans-serif
+  font-weight: 400
+  color: white
+  @media (max-width: 650px)
+    .testox
+      margin-left: 71px
+      font-size: 3.8vw
+
+.titoloSidebar
+  font-size: 32px
+  font-family: 'Muli', sans-serif
+  font-weight: 900
+  color: white
+  margin-right: 40px
+  margin-bottom: 50px
+
+
+.contTesto
+  margin-top: -60px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  flex-direction: column

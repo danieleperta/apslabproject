@@ -1,0 +1,77 @@
+.backImage {
+  width: 100%;
+  height: 340px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: 4; }
+
+.descProject {
+  top: 340px;
+  position: relative;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; }
+
+.testi {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 60%; }
+  @media (max-width: 700px) {
+    .testi {
+      width: 79%; } }
+
+.buttone {
+  position: absolute;
+  right: 20%;
+  top: 61px;
+  width: 38px;
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/download.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (max-width: 700px) {
+    .buttone {
+      right: 10%;
+      width: 29px;
+      height: 30px; } }
+
+.titleproject {
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  margin-top: 50px;
+  font-size: 40px; }
+
+.subtitleproject {
+  font-family: 'Space Mono', monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #c3c3c3;
+  padding-bottom: 40px; }
+  @media (max-width: 700px) {
+    .subtitleproject {
+      font-size: 12px; } }
+
+.textt {
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  font-weight: 500;
+  line-height: 21px;
+  padding-bottom: 100px;
+  text-align: justify; }
+  @media (max-width: 700px) {
+    .textt {
+      font-size: 14px; } }

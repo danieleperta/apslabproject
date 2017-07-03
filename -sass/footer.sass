@@ -1,0 +1,91 @@
+@import "mixins"
+
+.footer
+  width: 100%
+  height: 400px
+  background-color: black
+  @include flexCenter
+  flex-direction: column
+  z-index: 101
+  position: relative
+
+.top
+  width: 100%
+  height: 200px
+  @include flexCenter
+  flex-direction: column
+  justify-content: space-around !important
+  @media (max-width: 700px)
+    height: 137px
+    width: 80%
+
+.bottom
+  width: 80%
+  height: 200px
+  @include flexCenter
+  flex-direction: row
+  @media (max-width: 700px)
+    flex-direction: column
+
+.loghi
+  margin-right: 50px
+  width: 88px
+  height: 100px
+  position: relative
+  display: flex
+  flex-direction: row
+  @media (max-width: 700px)
+    margin-right: 0px
+
+.crediti
+  text-transform: uppercase
+  color: white
+  font-family: 'Muli', sans-serif
+  text-align: center
+  letter-spacing: 3px
+  font-size: 10px
+  font-weight: 700
+
+.credits
+  cursor: pointer
+  text-decoration: none
+  color: white !important
+
+.logoFooter
+  width: 175px
+  height: 41px
+  position: relative
+  background-image: url(../img/apswhite.png)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+
+.logosingperta
+  width: 70px
+  height: 100%
+  position: relative
+  background-image: url(../img/danieleperta.svg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+
+.logosingflemma
+  width: 42px
+  height: 100%
+  position: relative
+  background-image: url(../img/F.svg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+
+
+.desi
+  color: #4d4d4d
+  font-family: 'Muli', sans-serif
+  text-align: left
+  letter-spacing: 0px
+  font-size: 10px
+  font-weight: 700
+  width: 650px
+  @media (max-width: 700px)
+    width: 100%
